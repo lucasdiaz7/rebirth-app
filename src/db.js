@@ -1,7 +1,13 @@
-require("dotenv").config();
-const { Sequelize } = require("sequelize");
-const fs = require("fs");
-const path = require("path");
+import dotenv from 'dotenv';
+import { Sequelize } from "sequelize";
+import fs from "fs";
+import path from "path";
+
+dotenv.config();
+// require("dotenv").config();
+// const { Sequelize } = require("sequelize");
+// const fs = require("fs");
+// const path = require("path");
 
 const { DB_USER, DB_PASSWORD, DB_HOST, DATABASE, PORT, DATABASE_URL } = process.env;
 
@@ -88,7 +94,9 @@ Notification.belongsTo(User); // la notificacion pertenece a un usuario
 // Aca vendrian las relaciones
 // Product.hasMany(Reviews);
 
-module.exports = {
-  ...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');
-  conn: sequelize, // para importart la conexión { conn } = require('./db.js');
-};
+// module.exports = {
+//   ...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');
+//   conn: sequelize, // para importart la conexión { conn } = require('./db.js');
+// };
+
+export default sequelize;
