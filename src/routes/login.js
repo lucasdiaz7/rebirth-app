@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const router = Router();
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const { User } = require('../db');
 const { createToken } = require('../tools/loginSession');
 const { infoToPost } = require('../tools/loginSession');
