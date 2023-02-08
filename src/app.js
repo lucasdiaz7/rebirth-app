@@ -1,13 +1,3 @@
-// import express from'express';
-// import cookieParser from'cookie-parser';
-// import bodyParser from'body-parser';
-// import morgan from'morgan';
-// import routes from'./routes/index.js';
-// import dotenv from 'dotenv';
-
-// require('./db.js');
-
-// dotenv.config();
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
