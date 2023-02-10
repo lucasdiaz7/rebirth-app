@@ -1,5 +1,5 @@
 
-const SERVER = "http://localhost:3000/"
+const SERVER = "https://app-rebirth.netlify.app"
 
 const getPagination = (page, size) => {
     const limit = size ? +size : 6;
