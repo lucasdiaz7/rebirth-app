@@ -27,8 +27,8 @@ router.post("/", async (req, res) =>{
          
         back_urls: {
           "success": `${REDIRECT_BACK}/donations/pagos`,
-          "failure": `${REDIRECT_FRONT}/home`,
-          "pending": `${REDIRECT_FRONT}/home`
+          "failure": `${REDIRECT_FRONT}`,
+          "pending": `${REDIRECT_FRONT}`
       },
       auto_return: "approved",
 
@@ -49,7 +49,7 @@ router.post("/", async (req, res) =>{
 });
 
 router.get('/pagos', function(req, res) {
-    return res.redirect(`${REDIRECT_FRONT}/home`)
+    return res.redirect(`${REDIRECT_FRONT}`)
 })
 
 module.exports = router;
