@@ -30,7 +30,7 @@ conn.sync({ force: false }).then(async () => {
   await getPets();
 
 
-  server.listen(PORT || 7642, () => {
+  server.listen(PORT || 3001, () => {
     console.log(`%s listening at ${PORT}`); // eslint-disable-line no-console
   });
 });
