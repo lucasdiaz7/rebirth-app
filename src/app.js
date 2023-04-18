@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cors());
 app.use(router);
 
-// export default app;
+
 
 
 app.name = 'API';
@@ -41,5 +41,6 @@ app.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
   res.status(status).send(message);
 });
 
-module.exports = app;
+// module.exports = app;
+export default app;
 // export default app;
