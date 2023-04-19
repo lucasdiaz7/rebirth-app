@@ -15,7 +15,7 @@ const { DB_USER, DB_PASSWORD, DB_HOST, DATABASE, PORT} = process.env;
 
 
 const sequelize = new Sequelize(
-  `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DATABASE}`,
+  `postgresql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${PORT}/${DATABASE}`,
   // process.env.DATABASE_URL,
   {
     logging: false, // set to console.log to see the raw SQL queries
